@@ -1,0 +1,136 @@
+.logoBlock {
+  display: flex;
+  padding: 26px 9vw 0px 0px;
+  gap: 10px;
+}
+.logoBlock > h1 {
+  font-style: italic;
+  font-weight: 900;
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+  padding: 8px 0px 0px 0px;
+}
+.headerBtnsGroup {
+  display: none;
+}
+.orderBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0px 0px 0px;
+}
+.orderBlock > span:first-child {
+  font-weight: 900;
+  font-size: 1.8rem;
+  line-height: 1.7rem;
+  text-align: center;
+  padding: 0px 6vw 0px 9vw;
+}
+.orderBlock > span:nth-child(2) {
+  font-weight: 300;
+  font-size: 1.45rem;
+  line-height: 2.1rem;
+  padding: 7px 0px 0px 2.2vw;
+}
+.orderBlock > button {
+  width: 93px;
+  height: 28px;
+  background: linear-gradient(var(--linerBtn));
+  border-radius: 7px;
+  font-weight: 900;
+  font-size: 0.7rem;
+  line-height: 1rem;
+  color: var(--white);
+  margin: 8px 0px 0px 2vw;
+}
+
+@media (min-width: 321px) {
+  .logoBlock {
+    padding: 63px 0px 0px 8.8vw;
+  }
+  .logoBlock > img {
+    width: 100.01px;
+    height: 59.97px;
+  }
+  .logoBlock > h1 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    padding: 5px 0px 0px 1.9vw;
+  }
+  .orderBlock {
+    align-items: flex-start;
+    padding: 40px 0px 0px 8.8vw;
+  }
+  .orderBlock > span:first-child {
+    max-width: 315px;
+    font-size: clamp(16px, 10vw, 40px);
+    line-height: 40px;
+    text-align: left;
+    padding: 22px 0px 0px 0px;
+  }
+  .orderBlock > span:nth-child(2) {
+    display: none;
+  }
+  .orderBlock > span:nth-child(3) {
+    font-weight: 300;
+    font-size: 1.7rem;
+    line-height: 2.1rem;
+    padding: 14px 0px 0px 0px;
+  }
+  .orderBlock > button {
+    width: 141px;
+    height: 42px;
+    font-size: 1.1rem;
+    margin: 19px 0px 0px 0vw;
+  }
+}
+
+@media (min-width: 769px) {
+  .logoBlock {
+    padding: 45px 0px 0px 8.4vw;
+  }
+  .logoBlock > h1 {
+    padding: 7px 0px 0px 0.2vw;
+  }
+  .headerBtnsGroup {
+    display: inline-block;
+    width: 27vw;
+    padding: 49px 0px 0px 0px;
+  }
+  .headerBtnsGroup > a {
+    font-weight: 300;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    text-align: center;
+    color: var(--grayDark);
+  }
+  .headerBtnsGroup > a:nth-child(2) {
+    padding: 0px 2.5vw 0px 2.5vw;
+  }
+  .orderBlock {
+    padding: 34px 0px 0px 8.5vw;
+  }
+  .orderBlock > span:first-child {
+    max-width: 670px;
+    font-size: clamp(16px, 10vw, 50px);
+    line-height: 59px;
+    text-align: left;
+    padding: unset;
+  }
+  .orderBlock > span:nth-child(2) {
+    display: block;
+    font-weight: 300;
+    font-size: 1.7rem;
+    line-height: 2.1rem;
+    padding: 10px 0px 0px 0px;
+  }
+  .orderBlock > span:nth-child(3) {
+    display: none;
+  }
+  .orderBlock > button {
+    width: 179px;
+    height: 53px;
+    font-size: 1.4rem;
+    margin: 18px 0px 0px 0vw;
+  }
+}

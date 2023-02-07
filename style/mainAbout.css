@@ -1,0 +1,204 @@
+.mainAbout,
+.aboutCards,
+.aboutCards > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mainAbout {
+  padding: 23px 0px 0px 0px;
+}
+.mainAbout > h3 {
+  font-weight: 400;
+  font-size: 1.45rem;
+  line-height: 1.5rem;
+  text-align: center;
+  padding: 30px 0px 0px 2vw;
+}
+.mainAbout > h3 > span {
+  background: linear-gradient(var(--linerTitle));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.aboutCards > div {
+  width: 264px;
+  height: 363px;
+  background: var(--white);
+  border-radius: 9px;
+  box-shadow: 0px 0px 40px rgba(184, 0, 95, 0.2);
+  margin: 30px 0px 0px 1vw;
+}
+.aboutCards > div:nth-child(2) {
+  height: 374px;
+}
+.aboutCards > div:last-child {
+  height: 388px;
+}
+.aboutCards > div > img {
+  border-radius: 9px 9px 0px 0px;
+}
+.aboutCards > div > img:nth-child(2) {
+  display: none;
+}
+.aboutCards > div > h4 {
+  font-weight: 700;
+  font-size: 2.15rem;
+  line-height: 2.4rem;
+}
+.aboutCards > div > span {
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.15rem;
+  color: var(--gray);
+}
+.aboutCards {
+  padding: 25px 0px 0px 2vw;
+}
+.materialCard > h4 {
+  padding: 16px 21vw 0px 0px;
+}
+.materialCard > span {
+  padding: 10px 7vw 0px 5vw;
+}
+.differenceCard > h4 {
+  padding: 20px 28.5vw 0px 0px;
+}
+.differenceCard > span {
+  padding: 13px 7vw 0px 5vw;
+}
+.colorCard > h4 {
+  padding: 22px 17.5vw 0px 0px;
+}
+.colorCard > span {
+  padding: 12px 7vw 0px 5vw;
+}
+@media (min-width: 321px) {
+  .mainAbout {
+    padding: 212px 0px 0px 0px;
+  }
+  .mainAbout > h3 {
+    font-size: 2.9rem;
+    line-height: 2.5rem;
+    text-align: center;
+    padding: 0px 0px 0px 3.5vw;
+  }
+  .aboutCards {
+    padding: 77px 0px 0px 0vw;
+  }
+  .aboutCards > div {
+    width: 77.5vw;
+    height: 325px;
+    margin: unset;
+  }
+  .aboutCards > div:nth-child(2) {
+    height: 318px;
+    margin: 61px 0px 0px 0px;
+  }
+  .aboutCards > div:last-child {
+    height: 313px;
+    margin: 61px 0px 0px 0px;
+  }
+  .aboutCards > div > img {
+    width: 77.5vw;
+    display: none;
+  }
+  .aboutCards > div > img:nth-child(2) {
+    display: block;
+  }
+  .aboutCards > div > h4 {
+    font-size: clamp(16px, 4.7vw, 22.5rem);
+    line-height: 3.4rem;
+  }
+  .aboutCards > div > span {
+    font-size: 1rem;
+    line-height: 1.1rem;
+  }
+  .materialCard > h4 {
+    padding: 16px 42vw 0px 0px;
+  }
+  .materialCard > span {
+    padding: 10px 10vw 0px 5vw;
+  }
+  .differenceCard > h4 {
+    padding: 16px 46vw 0px 0px;
+  }
+  .differenceCard > span {
+    padding: 5px 7vw 0px 5vw;
+  }
+  .colorCard > h4 {
+    padding: 20px 41vw 0px 0px;
+  }
+  .colorCard > span {
+    padding: 12px 7.5vw 0px 5vw;
+  }
+}
+
+@media (min-width: 769px) {
+  .mainAbout {
+    padding: 263px 0px 0px 0px;
+  }
+  .mainAbout > h3 {
+    font-size: 3.55rem;
+    padding: unset;
+  }
+  .aboutCards {
+    flex-direction: row;
+    padding: 120px 0px 0px 0vw;
+    gap: 4vw;
+  }
+  .aboutCards > div {
+    max-width: 24vw;
+    height: 414px;
+    margin: unset;
+  }
+  .aboutCards > div:nth-child(2) {
+    height: 414px;
+    margin: unset;
+  }
+  .aboutCards > div:last-child {
+    height: 414px;
+    margin: unset;
+  }
+  .aboutCards > div > img {
+    width: 24vw;
+    display: block;
+  }
+  .aboutCards > div > img:nth-child(2) {
+    display: none;
+  }
+  .aboutCards > div > h4 {
+    font-size: clamp(16px, 2.5vw, 22.5rem);
+    text-align: start;
+  }
+  .aboutCards > div > span {
+    text-align: start;
+    font-size: 1rem;
+    line-height: 1.15rem;
+  }
+  .materialCard > img {
+    height: 14.5vw;
+    margin: 0px 2px 0px 0px;
+  }
+  .materialCard > h4 {
+    padding: 20px 7.8vw 0px 0px;
+  }
+  .materialCard > span {
+    padding: 10px 3.2vw 0px 1.2vw;
+  }
+  .differenceCard > h4 {
+    padding: 21px 9.3vw 0px 0px;
+  }
+  .differenceCard > span {
+    padding: 10px 1vw 0px 1.5vw;
+  }
+  .colorCard > img {
+    height: 14.5vw;
+    margin: 0px 0px 0px 2px;
+  }
+  .colorCard > h4 {
+    padding: 20px 5.9vw 0px 0px;
+  }
+  .colorCard > span {
+    padding: 12px 2vw 0px 1.8vw;
+  }
+}

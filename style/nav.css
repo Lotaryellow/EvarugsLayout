@@ -1,0 +1,84 @@
+nav > a:first-child {
+  padding: 20px 0px 11px 0px;
+}
+nav > a {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 0.7rem;
+  color: var(--white);
+}
+nav > a:nth-child(3) {
+  font-weight: 300;
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+  color: var(--white);
+  padding: 12px 0px 0px 1.2vw;
+}
+nav > a:last-child {
+  display: none;
+}
+
+@media (min-width: 321px) {
+  nav > a {
+    display: none;
+  }
+  nav > a:nth-child(3) {
+    display: block;
+    font-weight: 500;
+    font-size: 0.9rem;
+    line-height: 1.7rem;
+    padding: 0px 25.7vw 5px 0px;
+  }
+  nav > a:nth-child(3)::before {
+    content: url(../img/768/geo.svg);
+    padding: 0px 1vw 0px 0px;
+  }
+  nav > a:last-child {
+    display: inline-flex;
+    font-weight: 500;
+    line-height: 1rem;
+    color: var(--white);
+    padding: 0px 45px 1vw 0px;
+  }
+  nav > a:last-child::before {
+    content: url(../img/768/navicon.svg);
+    padding: 4px 9px 0px 0px;
+  }
+}
+@media (min-width: 769px) {
+  nav > a {
+    line-height: 1.5rem;
+    display: block;
+  }
+  nav > a:first-child {
+    display: flex;
+    align-items: center;
+    padding: 2px 0px 0px 9vw;
+  }
+  nav > a:first-child::before {
+    content: url(../img/1440/tel.svg);
+    padding: 0px 17px 0px 0px;
+  }
+  nav > a:nth-child(2) {
+    padding: 2px 0px 0px 2vw;
+  }
+  nav > a:nth-child(3) {
+    display: flex;
+    align-items: center;
+    padding: 0px 0px 0px 12.5vw;
+    font-size: 1rem;
+  }
+  nav > a:nth-child(3)::before {
+    content: url(../img/1440/Vector.svg);
+    padding: 0px 10px 0px 0px;
+  }
+  nav > a:last-child {
+    display: flex;
+    align-items: center;
+    padding: 0px 0px 7px 27vw;
+  }
+  nav > a:last-child::before {
+    content: url(../img/1440/Group.svg);
+    padding: 0px 13px 0px 0px;
+  }
+}

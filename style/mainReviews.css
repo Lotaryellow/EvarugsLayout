@@ -1,0 +1,208 @@
+.mainReviews,
+.mainReviews > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mainReviews {
+  width: 100%;
+  background: linear-gradient(var(--linerBgFeedback));
+  margin: 100px 0px 0px 0px;
+  padding: 0px 0px 50px 0px;
+  gap: 6.1rem;
+}
+.mainReviews > div {
+  position: relative;
+  width: 267px;
+  height: 210px;
+  background: var(--white);
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.25);
+  border-radius: 9px;
+}
+.mainReviews > div > img {
+  position: absolute;
+  top: -90px;
+}
+.mainReviews > div > span:nth-child(2) {
+  position: relative;
+  font-weight: 300;
+  font-size: 0.85rem;
+  line-height: 1rem;
+  text-align: center;
+}
+.mainReviews > div > span:nth-child(2)::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  background: linear-gradient(var(--linerTitle));
+}
+.mainReviews > div > span:nth-child(3) {
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  text-align: center;
+  color: var(--grayModal);
+}
+.firstReview {
+  margin: 100px 0px 0px 0px;
+}
+.firstReview > span:nth-child(2) {
+  padding: 70px 0px 0px 0px;
+}
+.firstReview > span:nth-child(2)::after {
+  margin: 37px 0px 0px -8.4rem;
+  width: 130px;
+}
+.firstReview > span:last-child {
+  padding: 40px 0px 0px 0px;
+}
+.twoReview > span:nth-child(2) {
+  padding: 76px 10vw 0px 9vw;
+}
+.twoReview > span:nth-child(2)::after {
+  margin: 34px 0px 0px -10.2rem;
+  width: 130px;
+}
+.twoReview > span:last-child {
+  padding: 35px 0px 0px 0px;
+}
+.threeReview > span:nth-child(2) {
+  padding: 77px 2vw 0px 2vw;
+}
+.threeReview > span:nth-child(2)::after {
+  margin: 31px 0px 0px -8.9rem;
+  width: 130px;
+}
+.threeReview > span:last-child {
+  padding: 30px 0px 0px 1.1vw;
+}
+
+@media (min-width: 321px) {
+  .mainReviews {
+    margin: 121px 0px 0px 0px;
+    padding: 0px 0px 50px 0px;
+    gap: 7.8rem;
+  }
+  .mainReviews > div {
+    width: 70vw;
+    height: 187px;
+  }
+  .mainReviews > div > span:nth-child(2) {
+    font-size: 2.44vw;
+    line-height: 1.5rem;
+  }
+  .mainReviews > div > span:nth-child(2)::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    background: linear-gradient(var(--linerTitle));
+  }
+  .mainReviews > div > span:nth-child(3) {
+    font-size: 1.7vw;
+    line-height: 0rem;
+  }
+  .firstReview > span:nth-child(2) > br {
+    display: none;
+  }
+  .firstReview > span:nth-child(2) {
+    padding: 78px 5vw 0px 5vw;
+  }
+  .firstReview > span:nth-child(2)::after {
+    margin: 43px 0px 0px 0px;
+    left: 26.5vw;
+    width: 130px;
+  }
+  .firstReview > span:last-child {
+    padding: 40px 0px 0px 0px;
+  }
+  .twoReview > span:nth-child(2) {
+    padding: 62px 6.1vw 0px 9.1vw;
+  }
+  .twoReview > span:nth-child(2)::after {
+    margin: 37px 0px 0px 0px;
+    left: 26.5vw;
+    width: 130px;
+  }
+  .twoReview > span:last-child {
+    padding: 35px 0px 0px 0px;
+  }
+  .threeReview > span:nth-child(2) {
+    padding: 70px 7.7vw 0px 7.5vw;
+  }
+  .threeReview > span:nth-child(2)::after {
+    margin: 50px 0px 0px 0px;
+    left: 26.5vw;
+    width: 130px;
+  }
+  .threeReview > span:last-child {
+    padding: 47px 1vw 0px 0vw;
+  }
+}
+@media (min-width: 769px) {
+  .mainReviews {
+    width: unset;
+    flex-direction: row;
+    overflow: hidden;
+    margin: 226px 0px 0px 0px;
+    padding: 98px 0px 70px 0px;
+    gap: 5rem;
+  }
+  .mainReviews > div {
+    width: 37vw;
+    height: 187px;
+  }
+  .mainReviews > div > span:nth-child(2) {
+    font-size: 1.3vw;
+    line-height: 1.5rem;
+  }
+  .mainReviews > div > span:nth-child(2)::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    background: linear-gradient(var(--linerTitle));
+  }
+  .mainReviews > div > span:nth-child(3) {
+    font-size: 0.9vw;
+    line-height: 0rem;
+  }
+  .firstReview {
+    margin: unset;
+  }
+  .firstReview > span:nth-child(2) > br {
+    display: none;
+  }
+  .firstReview > span:nth-child(2) {
+    padding: 74px 3.5vw 0px 2.2vw;
+  }
+  .firstReview > span:nth-child(2)::after {
+    margin: 44px 0px 0px 0px;
+    left: 14vw;
+    width: 130px;
+  }
+  .firstReview > span:last-child {
+    padding: 41px 0px 0px 0px;
+  }
+  .twoReview > span:nth-child(2) {
+    padding: 62px 4.5vw 0px 4.2vw;
+  }
+  .twoReview > span:nth-child(2)::after {
+    margin: 36px 0px 0px 0px;
+    left: 14vw;
+    width: 130px;
+  }
+  .twoReview > span:last-child {
+    padding: 41px 0px 0px 0px;
+  }
+  .threeReview > span:nth-child(2) {
+    padding: 75px 3.5vw 0px 4.2vw;
+  }
+  .threeReview > span:nth-child(2)::after {
+    margin: 43px 0px 0px 0px;
+    left: 14vw;
+    width: 130px;
+  }
+  .threeReview > span:last-child {
+    padding: 41px 0vw 0px 0vw;
+  }
+}

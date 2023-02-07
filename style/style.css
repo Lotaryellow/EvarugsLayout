@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,900&display=swap");
+@import url(./nullStyle.css);
+@import url(./nav.css);
+@import url(./header.css);
+@import url(./mainAbout.css);
+@import url(./mainReviews.css);
+@import url(./footer.css);
+@import url(./modal.css);
+
+:root {
+  font-family: "Roboto";
+  font-weight: 300;
+  --white: #ffffff;
+  --black: #000000;
+  --gray: #767676;
+  --grayDark: #737373;
+  --grayModal: #989898;
+  --borderGray: #a2a2a2;
+  --violet: #a800fb;
+  --linerHeader: 269.91deg, rgba(46, 49, 146, 0.7) 0%,
+    rgba(212, 20, 90, 0.7) 98.16%;
+  --linerBtn: 95.2deg, #b90160 2.23%, #2e3192 99.51%;
+  --linerTitle: 180deg, #b90160 2.23%, #2e3192 99.51%;
+  --linerModalBtn: #d4145a -21.03%, #3d5bf5 103.56%;
+  --linerBgFeedback: 94.31deg, rgba(212, 20, 90, 0.25) 0.96%,
+    rgba(46, 49, 146, 0.25) 104.83%;
+  --linerCard: 90.14deg, #d4145a 3.35%, #3d5bf5 91.43%;
+}
+
+body {
+  width: 100%;
+  background: url(../img/bg.png);
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  background-position: 4px 176px;
+}
+@media (min-width: 321px) {
+  body {
+    background: none;
+    background: url(../img/768/bgmain/bg.svg), url(../img/768/bgmain/bg2.svg),
+      url(../img/768/bgmain/bg3.svg), url(../img/768/bgmain/bg4.svg),
+      url(../img/768/bgmain/bg5.svg), url(../img/768/bgmain/bg6.svg),
+      url(../img/768/bgmain/bg7.svg), url(../img/768/bgmain/bg8.svg),
+      url(../img/768/bgmain/bg9.svg), url(../img/768/bgmain/bg10.png),
+      url(../img/768/bgmain/bg11.png);
+    background-repeat: no-repeat;
+    background-size: 9vw, 5.2vw, 2vw, 17vw, 12vw, 6vw, 23vw, 8vw, 6vw, 47vw,
+      67vw;
+    background-position: 102px 557px, 96px 520px, 118px 569px, 0px 945px,
+      100px 1094px, 81px 1186px, 565px 1768px, 710px 1922px, 689px 2011px,
+      384px 134px, 255px 170px;
+  }
+}
+@media (min-width: 769px) {
+  body {
+    max-width: 100%;
+    background: none;
+    background: url(../img/1440/bg.png), url(../img/1440/bg2.svg),
+      url(../img/1440/bg3.svg), url(../img/1440/bg4.svg),
+      url(../img/1440/bg5.svg), url(../img/1440/bg6.svg),
+      url(../img/1440/bg7.svg), url(../img/1440/bg8.svg),
+      url(../img/1440/bg9.svg), url(../img/768/bgmain/bg10.png);
+    background-repeat: no-repeat;
+    background-size: 52vw, 3vw, 5vw, 30vw, 17vw, 9vw, 1vw, 3vw, 1.7vw, 37vw;
+    background-position: 606px 217px, 151px 657px, 97px 697px, 0px 1011px,
+      458px 1221px, 386px 1469px, 174px 711px, 439px 321px, 417px 310px,
+      752px 141px;
+  }
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 99px;
+  background: linear-gradient(var(--linerHeader));
+}
+@media (min-width: 321px) {
+  nav {
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 79px;
+  }
+}
+@media (min-width: 769px) {
+  nav {
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 321px) {
+  header {
+    align-items: flex-start;
+    padding: 0px 0px 0px 0px;
+  }
+}
+@media (min-width: 769px) {
+  header {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 397px;
+  }
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 769px) {
+  main {
+    overflow: hidden;
+  }
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 321px) {
+  footer {
+    width: 100%;
+    display: grid;
+    grid-template-rows: 18vw;
+    grid-template-columns: 28vw 36vw 36vw;
+    padding: 90px 0px 105px 0px;
+    background: url(../img/768/bgfooter/Vector.svg),
+      url(../img/768/bgfooter/bg2.svg);
+    background-repeat: no-repeat;
+    background-size: 5.4vw, 11vw;
+    background-position: 700px 112px, 100px 104px;
+  }
+}
+@media (min-width: 769px) {
+  footer {
+    padding: 55px 0px 50px 0px;
+    grid-template-columns: 33vw 30vw 36vw;
+    background-size: 16.4vw, 8vw;
+    background-position: 1090px 18px, 68px 81px;
+  }
+}

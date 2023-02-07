@@ -1,0 +1,117 @@
+.contactTel,
+.social,
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer > div > h4 {
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.2rem;
+}
+footer > div > a {
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 0.8rem;
+  color: var(--black);
+}
+footer > span {
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1rem;
+}
+.contactTel {
+  padding: 62px 2vw 0px 0px;
+}
+.contactTel > a:nth-child(2) {
+  padding: 19px 0px 7px 0px;
+}
+.social {
+  padding: 20px 2vw 0px 0px;
+}
+.social > a {
+  margin: 15px 3vw 0px 0px;
+}
+.info {
+  padding: 15px 5vw 0px 0px;
+}
+.info > span {
+  text-align: center;
+  padding: 11px 14vw 0px 14vw;
+}
+.info > a {
+  padding: 23px 1vw 50px 0px;
+}
+
+@media (min-width: 321px) {
+  footer > div {
+    padding: 50px 0px 0px 0px;
+  }
+  footer > div > h4 {
+    font-size: clamp(8px, 1.8vw, 14px);
+  }
+  footer > div > a {
+    font-size: clamp(10px, 1.8vw, 1rem);
+    line-height: 0.8rem;
+  }
+  footer > span {
+    line-height: 1rem;
+  }
+  .contactTel {
+    align-items: flex-start;
+    padding: 36px 0vw 8px 7.2vw;
+  }
+  .contactTel > h4 {
+    line-height: 0rem;
+  }
+  .contactTel > a:nth-child(2) {
+    padding: 27px 0px 0px 0px;
+  }
+  .contactTel > a:nth-child(3) {
+    padding: 10px 0px 0px 0px;
+  }
+  .social {
+    align-items: flex-start;
+    padding: 17px 0vw 0px 4vw;
+    grid-row-end: 2;
+  }
+  .social > a {
+    margin: 14px 0vw 0px 0px;
+  }
+  .info {
+    align-items: flex-start;
+    padding: 68px 0vw 0px 0.5vw;
+  }
+  .info > span {
+    text-align: start;
+    padding: 18px 6vw 0px 0vw;
+    font-size: clamp(12px, 1.8vw, 14px);
+    line-height: 1.2rem;
+  }
+  .info > a {
+    padding: 18px 0vw 0px 0px;
+  }
+}
+@media (min-width: 769px) {
+  .contactTel {
+    align-items: flex-start;
+    padding: 61px 0vw 8px 8.7vw;
+  }
+  .social {
+    align-items: flex-start;
+    padding: 42px 0vw 0px 16.5vw;
+    grid-row-end: 2;
+  }
+
+  .info {
+    align-items: flex-start;
+    padding: 92px 0vw 0px 4vw;
+  }
+  .info > span {
+    text-align: start;
+    padding: 18px 17vw 0px 0vw;
+    font-size: clamp(12px, 1.8vw, 14px);
+    line-height: 1.2rem;
+  }
+}
